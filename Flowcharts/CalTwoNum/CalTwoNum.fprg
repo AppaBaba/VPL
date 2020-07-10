@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="darel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-07-09 11:08:44 AM"/>
+        <attribute name="created" value="ZGFyZWw7TUlSQTsyMDIwLTA3LTA4OzA4OjMxOjEzIFBNOzIwOTY="/>
+        <attribute name="edited" value="ZGFyZWw7TUlSQTsyMDIwLTA3LTA5OzExOjA4OjQ0IEFNOzQ2OzIyNDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, m, a" type="Integer" array="False" size=""/>
+            <declare name="cmd, more" type="String" array="False" size=""/>
+            <declare name="goodtogo, doitagain" type="Boolean" array="False" size=""/>
+            <assign variable="doitagain" expression="true"/>
+            <while expression="doitagain = true">
+                <output expression="&quot;Enter n value&quot;" newline="True"/>
+                <input variable="n"/>
+                <output expression="&quot;Enter m value&quot;" newline="True"/>
+                <input variable="m"/>
+                <assign variable="goodtogo" expression="false"/>
+                <while expression="goodtogo = false">
+                    <output expression="&quot;Enter command&quot;" newline="True"/>
+                    <input variable="cmd"/>
+                    <if expression="cmd = &quot;add&quot;">
+                        <then>
+                            <assign variable="a" expression="n + m"/>
+                            <assign variable="goodtogo" expression="true"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="cmd = &quot;sub&quot;">
+                        <then>
+                            <assign variable="a" expression="n - m"/>
+                            <assign variable="goodtogo" expression="true"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="cmd = &quot;mul&quot;">
+                        <then>
+                            <assign variable="a" expression="m * n"/>
+                            <assign variable="goodtogo" expression="true"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="goodtogo = false">
+                        <then>
+                            <output expression="&quot;Bad command&quot;" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </while>
+                <output expression="&quot;The answer is &quot; &amp; a" newline="True"/>
+                <output expression="&quot;Do you want to Calculate again? (yes or no)&quot;" newline="True"/>
+                <input variable="more"/>
+                <if expression="more = &quot;yes&quot;">
+                    <then>
+                        <assign variable="doitagain" expression="true"/>
+                    </then>
+                    <else>
+                        <assign variable="doitagain" expression="false"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;The program is done&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
