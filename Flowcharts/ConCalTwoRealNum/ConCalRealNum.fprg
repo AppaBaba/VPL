@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="darel"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2020-07-12 03:12:11 PM"/>
+        <attribute name="saved" value="2020-07-13 01:00:36 PM"/>
         <attribute name="created" value="ZGFyZWw7TUlSQTsyMDIwLTA3LTA4OzA4OjMxOjEzIFBNOzIwOTY="/>
-        <attribute name="edited" value="ZGFyZWw7TUlSQTsyMDIwLTA3LTEyOzAzOjEyOjExIFBNOzg3OzIyNTM="/>
+        <attribute name="edited" value="ZGFyZWw7TUlSQTsyMDIwLTA3LTEzOzAxOjAwOjM2IFBNOzg4OzIyNTc="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -70,7 +70,7 @@
                     </then>
                     <else/>
                 </if>
-                <if expression="cmd = &quot;dev&quot;">
+                <if expression="cmd = &quot;div&quot;">
                     <then>
                         <assign variable="a" expression="n / m"/>
                         <assign variable="goodtogo" expression="true"/>
